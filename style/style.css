@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,55 +10,48 @@
     list-style: none;
 }
 
-h1 {
+h1{
     font-size: 1.5rem;
     font-weight: 600;
 }
-
-h2 {
-    font-size: 3rem;
-    font-weight: 700;
+h2{
+    font-size: 5rem;
 }
 #home{
     font-size: 3rem;
     font-weight: 700;
 }
-
-h3 {
+h3{
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
-
-p {
+p{
     font-size: 1.2rem;
 }
 
-header {
+header{
     width: 100%;
     height: 5rem;
     background-color: rgba(240, 248, 255, 0.863);
     position: fixed;
     top: 0;
-
-    margin-right: 0px;
+    z-index: 333;
 }
-
-.container {
-    width: 100%;
-    max-width: 190rem;
+.container{
+    width: 96%;
+    max-width: 117rem;
     margin: 0 auto;
 }
 
-.navbar {
+.navbar{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.navbar h1 {
+.navbar h1{
     text-transform: uppercase;
     color: rgba(61, 71, 65, 0.308);
     font-weight: 600;
@@ -67,18 +60,35 @@ header {
     font-size: 20px;
 }
 
-
-
-
-.hero {
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul a{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: cadetblue;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+.navbar ul a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: aquamarine;
+}
+.hero{
     max-width: 114rem;
     height: 30rem;
     background: url(../img/background2.jpg) no-repeat center center / cover;
     margin: 5rem auto;
 }
 
-main {
-    width: auto;
+main{
+    width: 100%;
+    max-width: 70rem;
     background-color: rgb(177, 230, 230);
     margin: 0 auto;
     padding: 3rem;
@@ -86,49 +96,48 @@ main {
     margin-top: -10rem;
 }
 
-main h2 {
+main h2{
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 3px;
 }
 
-main .container h3 {
+main .container h3{
     font-size: 1.3rem;
     font-weight: 600;
     margin: 2rem 0;
 }
-
-main .content .natural-food {
+main .content .natural-food{
     width: 100%;
     height: 25rem;
     background: url(../img/vegetables.jpg) no-repeat center center / cover;
-
+    
 }
-
-.home-food {
+.home-food{
     width: 100%;
     height: 25rem;
     background: url(../img/home-food.jpg) no-repeat center center / cover;
 }
-
-.cardio {
+.cardio{
     width: 100%;
     height: 25rem;
     background: url(../img/exercise.jpg) no-repeat center center / cover;
 }
-
-.stress {
+.stress{
     width: 100%;
     height: 25rem;
     background: url(../img/stress.jpg) no-repeat center center / cover;
 }
 
-li {
+li{
     font-size: 1.2rem;
-    padding-left: 20px;
+    padding-left: 50px;
 }
-
-blockquote {
+.bodyweight-list li{
+    font-size: 1.2rem;
+    padding-left: 50px;
+}
+blockquote{
     font-size: 1.2rem;
     padding: 1rem 2.8rem;
     line-height: 1.6;
@@ -137,7 +146,7 @@ blockquote {
     background-color: beige;
 }
 
-footer {
+footer{
     background: linear-gradient(to right, #01040f, rgb(40, 59, 53), rgb(65, 165, 132));
     color: #fff;
     padding: 100px 0 30px;
@@ -147,37 +156,31 @@ footer {
     border-radius: 8px;
 }
 
-.col {
+.col{
     flex-basis: 25%;
     padding: 10px;
 }
-
-.col:nth-child(2),
-.col:nth-child(3) {
+.col:nth-child(2), .col:nth-child(3){
     flex-basis: 15%;
 }
-
-.logo {
+.logo{
     width: 80px;
     margin-bottom: 10px;
 }
-
-.col h3 {
+.col h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
     font-size: 1.0rem;
 
 }
-
-.email-id {
+.email-id{
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
 }
-
-.row {
-    width: 85%;
+.row{
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -185,72 +188,27 @@ footer {
     justify-content: space-between;
 
 }
-
-.col p {
+.col p{
     font-size: 0.8rem;
-}
+} 
 
-
-
-ul li a {
+ul li a{
     text-decoration: none;
     color: #fff;
     padding-left: 0%;
 }
 
-form {
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #240202;
-    margin-bottom: 50px;
-    padding-top: 10px;
-}
-
-form .far {
-    font-size: 18px;
-    margin-right: 10px;
-    color: crimson;
-
-}
-
-form input {
-    width: 100%;
-    background: transparent;
-    color: #290f0f;
-    border: 0;
-    outline: none;
-    margin-right: 10px;
-}
-
-.btn {
-    background: #01040f;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-
-}
-
-btn:hover {
-    background: white;
-    color: black;
-    cursor: pointer;
-    display: flex;
-    height: 70px;
-}
-
-.thanks {
+.thanks{
     color: rgb(85, 175, 85);
     margin-top: 10px;
     display: block;
 }
-
 .social-menu ul {
     position: relative;
     transform: translate(-50%, -50%);
     display: flex;
-    margin-right: 15px;
+    margin-right: 1px;
+    padding-left: 2px;
 }
 
 .social-menu ul li {
@@ -260,7 +218,6 @@ btn:hover {
     margin-right: 0px;
     padding-left: 2px;
 }
-
 .social-menu ul li .fa {
     font-size: 17px;
     line-height: 30px;
@@ -271,12 +228,10 @@ btn:hover {
     z-index: 1000;
     justify-content: center;
 }
-
-.social-menu {
+.social-menu{
     margin-top: 30px;
     margin-left: 180px;
 }
-
 .social-menu ul li a {
     position: relative;
     display: block;
@@ -286,47 +241,38 @@ btn:hover {
     background-color: #fff;
     text-align: center;
     transition: .6s;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
 }
-
 .social-menu ul li .fa:hover {
     color: rgb(236, 236, 235);
 }
-
-.social-menu ul li a:hover {
+.social-menu ul li a:hover{
     transform: translate(0, -10px);
-
+    
 }
-
-.social-menu ul li:nth-child(1) a:hover {
+.social-menu ul li:nth-child(1) a:hover{
     background-color: #3b5999;
 }
-
-.social-menu ul li:nth-child(2) a:hover {
+.social-menu ul li:nth-child(2) a:hover{
     background-color: #55acee;
 }
-
-.social-menu ul li:nth-child(3) a:hover {
+.social-menu ul li:nth-child(3) a:hover{
     background-color: #e4405f;
 }
-
-.social-menu ul li:nth-child(4) a:hover {
+.social-menu ul li:nth-child(4) a:hover{
     background-color: #0077b5;
 }
-
-hr {
+hr{
     width: 90%;
     border: 0;
     border-bottom: 1px solid black;
     margin: 20px auto;
 }
-
-.copyright {
+.copyright{
     text-align: center;
     font-size: 0.6rem;
 }
-
-.underline {
+.underline{
     width: 100%;
     height: 5px;
     background: #1b1818;
@@ -336,8 +282,7 @@ hr {
     left: 0;
     overflow: hidden;
 }
-
-.underline span {
+.underline span{
     width: 15px;
     height: 100%;
     background: white;
@@ -349,61 +294,52 @@ hr {
 
 
 }
-
-@keyframes moving {
-    0% {
+@keyframes moving{
+    0%{
         left: -20px;
     }
-
-    100% {
+    100%{
         left: 100%;
     }
 }
 
-@media (max-width: 700px) {
-    footer {
+@media (max-width: 700px){
+    footer{
         bottom: unset;
     }
-
     .col {
         flex-basis: 100%;
 
     }
-
     .col:nth-child(2),
     .col:nth-child(3) {
-        flex-basis: 100%;
+            flex-basis: 100%;
     }
-
+    
 }
-
-.container {
+.container{
     cursor: pointer;
 }
-
-.articles {
-    width: 100%;
+.articles{
+    width: auto;
     background-color: aquamarine;
     margin: 5rem 0;
     padding: 5rem 0;
 }
-
-.article-heading {
+.article-heading{
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     position: relative;
 }
-
-.article-heading h5 {
+.article-heading h5{
     font-size: 10rem;
     font-weight: 600;
     letter-spacing: 3px;
     position: relative;
     color: rgb(103, 224, 186);
 }
-
-.article-heading h6 {
+.article-heading h6{
     text-transform: uppercase;
     text-align: center;
     width: 100%;
@@ -415,41 +351,37 @@ hr {
     transform: translate(-50%, -50%);
 
 }
-
-.cards-container {
+.cards-container{
     display: flex;
     justify-content: space-between;
     margin: 4rem;
     gap: 5rem;
+    width: 80%;
 }
-
 .cards-container {
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
-.img-holder-one {
+.img-holder-one{
     max-width: 100%;
     height: 24rem;
-    background: url(../img/mothers.jpg) no-repeat center center /cover;
+    background:url(../img/mothers.jpg) no-repeat center center /cover;
     position: relative;
 }
-
-.img-holder-two {
+.img-holder-two{
     max-width: 100%;
     height: 24rem;
-    background: url(../img/bulk\ link.jpg) no-repeat center center /cover;
+    background:url(../img/bulk\ link.jpg) no-repeat center center /cover;
     position: relative;
 }
-
-.img-holder-three {
+.img-holder-three{
     max-width: 100%;
     height: 24rem;
-    background: url(../img/weight-loss.jpg) no-repeat center center /cover;
+    background:url(../img/weight-loss.jpg) no-repeat center center /cover;
     position: relative;
 }
-
-.cards-container a {
+.cards-container a{
     text-transform: capitalize;
     font-size: 1.2rem;
     padding: 0.3rem 1.5rem;
@@ -462,94 +394,35 @@ hr {
     right: 5%;
     transition: all 0.4s ease;
 }
-
-.cards-container .card-container-one:hover {
+.cards-container .card-container-one:hover{
     transform: translateY(-1rem);
     transition: all 0.4s ease;
 }
-
-.cards-container .card-container-one:hover a {
+.cards-container .card-container-one:hover a{
     background-color: #e4405f;
     color: #fff;
 }
-
-.cards-container .card-container-two:hover {
+.cards-container .card-container-two:hover{
     transform: translateY(-1rem);
     transition: all 0.4s ease;
 }
-
-.cards-container .card-container-two:hover a {
+.cards-container .card-container-two:hover a{
     background-color: #e4405f;
     color: #fff;
 }
-
-.cards-container .card-container-three:hover {
+.cards-container .card-container-three:hover{
     transform: translateY(-1rem);
     transition: all 0.4s ease;
 }
-
-.cards-container .card-container-three:hover a {
+.cards-container .card-container-three:hover a{
     background-color: #e4405f;
     color: #fff;
 }
-
-.card-text {
+.card-text{
     background-color: white;
     padding: 2rem;
     box-shadow: 0 0 1.3rem grey;
 }
-.bulky{
-    height: auto;
-    margin: auto;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-}
-.bmr{
-    width: 100%;
-    height: 30rem;
-    background: url(../img/bmr.jpg) no-repeat center center / cover;
-}
-.burpees{
-    width: 100%;
-    height: 45rem;
-    background: url(../img/burpees.jpg) no-repeat center center / cover;
-}
-
-.deadlift{
-    width: 100%;
-    height: 55rem;
-    background: url(../img/deadlift.jpg) no-repeat center center / cover;
-}
-.chicken{
-    width: 100%;
-    height: 25rem;
-    background: url(../img/grilled\ chicken.jpg) no-repeat center center / cover;
-}
-.protein{
-    width: 100%;
-    height: 25rem;
-    background: url(../img/lean\ protein.jpg) no-repeat center center / cover;
-}
-.eggs{
-    width: 100%;
-    height: 25rem;
-    background: url(../img/scrambled\ eggs.jpg) no-repeat center center / cover;
-}
-.sleep{
-    width: 100%;
-    height: 25rem;
-    background: url(../img/sleep.jpg) no-repeat center center / cover;
-}
-.bulk{
-    width: 100%;
-    height: 25rem;
-    background: url(../img/bulk.jpg) no-repeat center center / cover;
-}
-
 
 
 
@@ -591,3 +464,12 @@ hr {
     width: auto;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+}
