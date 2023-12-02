@@ -78,8 +78,7 @@ header {
 }
 
 main {
-    width: 100%;
-    max-width: 75rem;
+    width: auto;
     background-color: rgb(177, 230, 230);
     margin: 0 auto;
     padding: 3rem;
@@ -499,10 +498,15 @@ hr {
     padding: 2rem;
     box-shadow: 0 0 1.3rem grey;
 }
-.bulk{
-    width: 100%;
-    height: 25rem;
-    background: url(../img/bulk.jpg) no-repeat center center / cover;
+.bulky{
+    height: auto;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 .bmr{
     width: 100%;
