@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
     list-style: none;
+    width: 100%;
 }
 
 h1{
@@ -31,6 +31,7 @@ p{
 
 header{
     width: 100%;
+    max-width: auto;
     height: 5rem;
     background-color: rgba(240, 248, 255, 0.863);
     position: fixed;
@@ -43,7 +44,23 @@ header{
     margin: 0 auto;
 }
 
+.navbar{
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.navbar h1{
+    text-transform: uppercase;
+    color: rgba(61, 71, 65, 0.308);
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
 
 .hero{
     max-width: 114rem;
@@ -54,7 +71,7 @@ header{
 
 main{
     width: 100%;
-    max-width: 70rem;
+    max-width: 75rem;
     background-color: rgb(177, 230, 230);
     margin: 0 auto;
     padding: 3rem;
@@ -269,20 +286,7 @@ hr{
     }
 }
 
-@media (max-width: 700px){
-    footer{
-        bottom: unset;
-    }
-    .col {
-        flex-basis: 100%;
 
-    }
-    .col:nth-child(2),
-    .col:nth-child(3) {
-            flex-basis: 100%;
-    }
-    
-}
 .container{
     cursor: pointer;
 }
